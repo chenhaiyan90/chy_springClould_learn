@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.chy</groupId>
+	<artifactId>springcloudbegin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>springcloudbegin</name>
+	<description>Demo project for Spring Boot</description>
+
+	<modules>
+		<module>spring-cloud-begin1</module>
+		<module>spring-cloud-begin2</module>
+		<module>spring-cloud-eureka-server</module>
+		<module>spring-cloud-eureka-client</module>
+		<module>spring-cloud-ribbon-consumer</module>
+
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Brixton.SR5</spring-cloud.version>
+		<druid.version>1.0.29</druid.version>
+		<servlet.api.version>2.5</servlet.api.version>
+		<lombok.version>1.16.16</lombok.version>
+		<fastjson.version>1.2.31</fastjson.version>
+		<jackson.version>2.8.8</jackson.version>
+		<dependencies.dependency.version>1.3.0-SNAPSHOT</dependencies.dependency.version>
+		<!-- starter dependency -->
+		<camel.kafka.starter.version>1.0.0</camel.kafka.starter.version>
+		<mybatis.starter.version>1.2.0</mybatis.starter.version>
+		<rocketmq.starter.version>1.0.4</rocketmq.starter.version>
+		<!-- external dependency-->
+		<!--<mall-trade-api.version>1.4.0-SNAPSHOT</mall-trade-api.version>-->
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<!--<repositories>-->
+		<!--<repository>-->
+			<!--<id>nexus</id>-->
+			<!--<url>http://nexus.fcbox.com/repository/maven-public/</url>-->
+			<!--<releases>-->
+				<!--<enabled>true</enabled>-->
+			<!--</releases>-->
+			<!--<snapshots>-->
+				<!--<enabled>true</enabled>-->
+			<!--</snapshots>-->
+		<!--</repository>-->
+		<!--<repository>-->
+			<!--<id>nexus_release</id>-->
+			<!--<url>http://nexus.fcbox.com/repository/maven-releases/</url>-->
+			<!--<releases>-->
+				<!--<enabled>true</enabled>-->
+			<!--</releases>-->
+			<!--<snapshots>-->
+				<!--<enabled>false</enabled>-->
+			<!--</snapshots>-->
+		<!--</repository>-->
+		<!--<repository>-->
+			<!--<id>nexus_snapshots</id>-->
+			<!--<url>http://nexus.fcbox.com/repository/maven-snapshots/</url>-->
+			<!--<releases>-->
+				<!--<enabled>false</enabled>-->
+			<!--</releases>-->
+			<!--<snapshots>-->
+				<!--<enabled>true</enabled>-->
+			<!--</snapshots>-->
+		<!--</repository>-->
+	<!--</repositories>-->
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Release Repository</name>
+			<url>http://nexus.fcbox.com/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://nexus.fcbox.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+</project>
