@@ -13,7 +13,9 @@
 
 	<modules>
 		<module>spring-cloud-begin1</module>
-		<module>spring-cloud-begin2</module>
+		<module>config-server</module>
+		<module>spring-cloud-admin-client</module>
+		<module>spring-cloud-admin-server</module>
 		<module>spring-cloud-eureka-server</module>
 		<module>spring-cloud-eureka-client</module>
 		<module>spring-cloud-ribbon-consumer</module>

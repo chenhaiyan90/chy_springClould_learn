@@ -2,8 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/springcloudbegin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-admin-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-admin-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-begin1" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-begin2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-eureka-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloudbegin/spring-cloud-ribbon-consumer" charset="UTF-8" />

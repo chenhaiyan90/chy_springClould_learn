@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-admin-client" />
+        <module name="spring-cloud-admin-server" />
         <module name="spring-cloud-begin1" />
         <module name="spring-cloud-begin2" />
         <module name="spring-cloud-eureka-client" />
@@ -14,6 +16,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-cloud-admin-client" target="1.8" />
+      <module name="spring-cloud-admin-server" target="1.8" />
       <module name="spring-cloud-begin1" target="1.8" />
       <module name="spring-cloud-begin2" target="1.8" />
       <module name="spring-cloud-eureka-client" target="1.8" />
